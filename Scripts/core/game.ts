@@ -17,9 +17,17 @@ var end: scenes.End;
 var assetData:objects.Asset[] = [
     // Add your Assets here
     {id: "StartButton", src:"../../Assets/images/StartButton.png"},
-    {id: "StartOverButton", src:"../../Assets/images/StartOverButton.png"}
-
+    {id: "StartOverButton", src: "../../Assets/images/StartOverButton.png"},
+    { id: "1", src: "../../Assets/images/one.png" },
+    { id: "2", src: "../../Assets/images/two.png" },
+    { id: "3", src: "../../Assets/images/three.png" },
+    { id: "4", src: "../../Assets/images/four.png" },
+    { id: "5", src: "../../Assets/images/five.png" },
+    { id: "6", src: "../../Assets/images/six.png" },
+    { id: "rollbutton", src: "../../Assets/images/roll.png" }
 ];
+
+
 
 function preload() {
     assets = new createjs.LoadQueue();

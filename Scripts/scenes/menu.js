@@ -16,10 +16,10 @@ var scenes;
         // Start Method
         Menu.prototype.start = function () {
             //Add Menu Label
-            this._menuLabel = new objects.Label("MENU SCENE", "60px Consolas", "#000000", config.Screen.CENTER_X, config.Screen.CENTER_Y);
+            this._menuLabel = new objects.Label("Roll two dices", "60px Consolas", "#000000", config.Screen.CENTER_X, config.Screen.CENTER_Y - 100);
             this.addChild(this._menuLabel);
             // add the Start button to the MENU scene
-            this._startButton = new objects.Button("StartButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 180);
+            this._startButton = new objects.Button("StartButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 80, false);
             this.addChild(this._startButton);
             // Start Button event listener
             this._startButton.on("click", this._startButtonClick, this);
@@ -37,7 +37,7 @@ var scenes;
             changeScene();
         };
         return Menu;
-    }(objects.Scene));
+    })(objects.Scene);
     scenes.Menu = Menu;
 })(scenes || (scenes = {}));
 //# sourceMappingURL=menu.js.map
